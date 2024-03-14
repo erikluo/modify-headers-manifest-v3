@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Modify Request Headers",
+    "version": "1.0",
+    "description": "Intercept requests and add a custom header",
+    "permissions": [
+      "webRequest",
+      "declarativeNetRequest",
+      "tabs",
+      "storage"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ]
+  }
+  
